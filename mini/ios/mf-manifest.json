@@ -64,6 +64,25 @@
       }
     },
     {
+      "id": "mini:react-native/Libraries/Image/AssetSourceResolver",
+      "name": "react-native/Libraries/Image/AssetSourceResolver",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "index.bundle",
+            "vendors-node_modules_react-native_Libraries_Image_AssetSourceResolver_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
       "id": "mini:@react-native/virtualized-lists",
       "name": "@react-native/virtualized-lists",
       "version": "*",
@@ -100,6 +119,24 @@
       }
     },
     {
+      "id": "mini:@react-native/assets-registry/path-support",
+      "name": "@react-native/assets-registry/path-support",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "node_modules_react-native_assets-registry_path-support_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
       "id": "mini:@react-native/assets-registry/registry",
       "name": "@react-native/assets-registry/registry",
       "version": "*",
@@ -127,24 +164,6 @@
           "async": [],
           "sync": [
             "vendors-node_modules_react-native_Libraries_ReactPrivate_ReactNativePrivateInterface_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
-      "id": "mini:@react-native/assets-registry/path-support",
-      "name": "@react-native/assets-registry/path-support",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "node_modules_react-native_assets-registry_path-support_js.chunk.bundle"
           ]
         },
         "css": {
@@ -302,7 +321,8 @@
           ],
           "async": [
             "vendors-node_modules_react-native_Libraries_TurboModule_TurboModuleRegistry_js.chunk.bundle",
-            "vendors-node_modules_react-native_Libraries_Components_AccessibilityInfo_legacySendAccessibil-20d260.chunk.bundle"
+            "vendors-node_modules_react-native_Libraries_Components_AccessibilityInfo_legacySendAccessibil-20d260.chunk.bundle",
+            "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_ios_js.chunk.bundle"
           ]
         },
         "css": {
