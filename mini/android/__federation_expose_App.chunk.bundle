@@ -1,4 +1,4 @@
-(self["webpackChunkMini"] = self["webpackChunkMini"] || []).push([["__federation_expose_App"], {
+(self["webpackChunkmini"] = self["webpackChunkmini"] || []).push([["__federation_expose_App"], {
 1361: (function (__unused_webpack_module, exports) {
 "use strict";
 /**
@@ -58,12 +58,31 @@ var _jsxruntime = __webpack_require__(70095);
 var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(16360));
 var _reactnative = __webpack_require__(77086);
 function App() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
-        children: "This is mini app"
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                children: "This is mini app"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Image, {
+                source: __webpack_require__(66615),
+                style: {
+                    height: 100,
+                    aspectRatio: 1
+                },
+                resizeMode: "contain"
+            })
+        ]
     });
 }
 var _default = App;
 
+
+}),
+66615: (function (module, __unused_webpack_exports, __webpack_require__) {
+var AssetSourceResolver = __webpack_require__(34418);
+var resolver = new AssetSourceResolver(undefined, undefined, {"name":"spring-100f3ba0","type":"jpg","httpServerLocation":"https://raw.githubusercontent.com/nguyenhoangtu0394/host/refs/heads/main/mini/android/remote-assets/assets","scales":[1],"height":676,"width":1200});
+
+module.exports = resolver.scaledAssetPath();
 
 }),
 
