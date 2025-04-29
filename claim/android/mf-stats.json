@@ -49,10 +49,10 @@
     },
     {
       "singleton": true,
-      "requiredVersion": "19.0.0",
+      "requiredVersion": "/Users/apple/Documents/Developer/repack/claim/react-19.1.0.tgz",
       "shareScope": "default",
       "eager": false,
-      "version": "19.0.0",
+      "version": "/Users/apple/Documents/Developer/repack/claim/react-19.1.0.tgz",
       "name": "react",
       "id": "claim:react",
       "assets": {

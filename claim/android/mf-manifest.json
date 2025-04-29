@@ -47,9 +47,9 @@
     {
       "id": "claim:react",
       "name": "react",
-      "version": "19.0.0",
+      "version": "/Users/apple/Documents/Developer/repack/claim/react-19.1.0.tgz",
       "singleton": true,
-      "requiredVersion": "19.0.0",
+      "requiredVersion": "/Users/apple/Documents/Developer/repack/claim/react-19.1.0.tgz",
       "assets": {
         "js": {
           "async": [],

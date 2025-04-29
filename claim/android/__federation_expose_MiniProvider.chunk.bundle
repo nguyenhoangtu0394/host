@@ -208,7 +208,7 @@ _export(exports, {
 var _interop_require_wildcard = __webpack_require__(83610);
 var _sliced_to_array = __webpack_require__(78474);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(43348));
+var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(11578));
 var _reactnativepaper = __webpack_require__(31778);
 var _rxjs = __webpack_require__(90592);
 var loadingObs = new _rxjs.Subject();
@@ -274,7 +274,7 @@ var _interop_require_wildcard = __webpack_require__(83610);
 var _object_without_properties = __webpack_require__(86136);
 var _sliced_to_array = __webpack_require__(78474);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(43348));
+var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(11578));
 var _reactnative = __webpack_require__(56300);
 var _reactnativepaper = __webpack_require__(31778);
 var _native = __webpack_require__(57102);
@@ -349,7 +349,7 @@ var _object_spread = __webpack_require__(36192);
 var _object_spread_props = __webpack_require__(83590);
 var _object_without_properties = __webpack_require__(86136);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(11578));
 var _reactnative = __webpack_require__(56300);
 var _reactnativesafeareacontext = __webpack_require__(33481);
 var Screen = (props)=>{
@@ -391,7 +391,7 @@ var _object_spread = __webpack_require__(36192);
 var _object_spread_props = __webpack_require__(83590);
 var _object_without_properties = __webpack_require__(86136);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(11578));
 var _reactnative = __webpack_require__(56300);
 var ScrollView = (props)=>{
     var children = props.children, restProps = _object_without_properties._(props, [
