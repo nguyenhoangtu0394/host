@@ -49,11 +49,11 @@
     },
     {
       "singleton": true,
-      "requiredVersion": "19.1.0",
+      "requiredVersion": "18.3.1",
       "shareScope": "default",
       "eager": false,
+      "version": "18.3.1",
       "name": "react",
-      "version": "19.1.0",
       "id": "pos:react",
       "assets": {
         "js": {

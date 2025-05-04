@@ -47,9 +47,9 @@
     {
       "id": "pos:react",
       "name": "react",
-      "version": "19.1.0",
+      "version": "18.3.1",
       "singleton": true,
-      "requiredVersion": "19.1.0",
+      "requiredVersion": "18.3.1",
       "assets": {
         "js": {
           "async": [],
