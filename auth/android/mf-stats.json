@@ -729,9 +729,9 @@
         }
       },
       "usedIn": [
-        "./AccountScreen",
+        "./SignInScreen",
         "./AuthProvider",
-        "./SignInScreen"
+        "./AccountScreen"
       ]
     }
   ],
