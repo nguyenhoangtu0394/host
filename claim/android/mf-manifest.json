@@ -47,9 +47,9 @@
     {
       "id": "claim:react",
       "name": "react",
-      "version": "19.0.0",
+      "version": "19.1.0",
       "singleton": true,
-      "requiredVersion": "19.0.0",
+      "requiredVersion": "19.1.0",
       "assets": {
         "js": {
           "async": [],

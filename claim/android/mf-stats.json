@@ -49,11 +49,11 @@
     },
     {
       "singleton": true,
-      "requiredVersion": "19.0.0",
+      "requiredVersion": "19.1.0",
       "shareScope": "default",
       "eager": false,
-      "version": "19.0.0",
       "name": "react",
+      "version": "19.1.0",
       "id": "claim:react",
       "assets": {
         "js": {
