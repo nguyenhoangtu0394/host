@@ -1,0 +1,141 @@
+(self["webpackChunksas_auth"] = self["webpackChunksas_auth"] || []).push([["__federation_expose_SignInScreen"], {
+78190: (function (__unused_webpack_module, exports) {
+"use strict";
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+    var key = null;
+    void 0 !== maybeKey && (key = "" + maybeKey);
+    void 0 !== config.key && (key = "" + config.key);
+    if ("key" in config) {
+        maybeKey = {};
+        for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+    } else maybeKey = config;
+    config = maybeKey.ref;
+    return {
+        $$typeof: REACT_ELEMENT_TYPE,
+        type: type,
+        key: key,
+        ref: void 0 !== config ? config : null,
+        props: maybeKey
+    };
+}
+exports.Fragment = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+exports.jsxs = jsxProd;
+
+
+}),
+7100: (function (module, __unused_webpack_exports, __webpack_require__) {
+"use strict";
+
+if (true) {
+    module.exports = __webpack_require__(78190);
+} else {}
+
+
+}),
+60668: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    AuthContext: function() {
+        return AuthContext;
+    },
+    useAuth: function() {
+        return useAuth;
+    }
+});
+var _interop_require_default = __webpack_require__(97433);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var AuthContext = _react.default.createContext({
+    signIn: ()=>{},
+    signOut: ()=>{},
+    signUp: ()=>{}
+});
+var useAuth = ()=>_react.default.useContext(AuthContext);
+
+
+}),
+13876: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _reactnativepaper = __webpack_require__(99537);
+var _AuthContext = __webpack_require__(60668);
+var SignInScreen = ()=>{
+    var signIn = (0, _AuthContext.useAuth)().signIn;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+        style: styles.container,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                variant: "headlineMedium",
+                style: styles.welcomeHeadline,
+                children: "Welcome!"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                style: styles.welcomeText,
+                variant: "bodyLarge",
+                children: "This is a dummy login screen. Just press the button and have a look around this super app \uD83D\uDE80"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Pressable, {
+                style: styles.button,
+                onPress: signIn,
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                    children: "Login"
+                })
+            })
+        ]
+    });
+};
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        backgroundColor: '#fff',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    welcomeHeadline: {
+        color: _reactnativepaper.MD3Colors.primary20
+    },
+    welcomeText: {
+        padding: 16,
+        paddingBottom: 32
+    },
+    button: {
+        backgroundColor: _reactnativepaper.MD3Colors.primary90,
+        padding: 16,
+        borderRadius: 16
+    }
+});
+var _default = SignInScreen;
+
+
+}),
+
+}]);//# sourceMappingURL=__federation_expose_SignInScreen.chunk.bundle.map?platform=android

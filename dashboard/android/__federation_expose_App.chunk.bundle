@@ -1,0 +1,1172 @@
+(self["webpackChunksas_dashboard"] = self["webpackChunksas_dashboard"] || []).push([["__federation_expose_App"], {
+48826: (function (module, __unused_webpack_exports, __webpack_require__) {
+var map = {
+  "./af": "15269",
+  "./af.js": "15269",
+  "./ar": "82473",
+  "./ar-dz": "44224",
+  "./ar-dz.js": "44224",
+  "./ar-kw": "71635",
+  "./ar-kw.js": "71635",
+  "./ar-ly": "15777",
+  "./ar-ly.js": "15777",
+  "./ar-ma": "89591",
+  "./ar-ma.js": "89591",
+  "./ar-sa": "75282",
+  "./ar-sa.js": "75282",
+  "./ar-tn": "24831",
+  "./ar-tn.js": "24831",
+  "./ar.js": "82473",
+  "./az": "34446",
+  "./az.js": "34446",
+  "./be": "13747",
+  "./be.js": "13747",
+  "./bg": "93589",
+  "./bg.js": "93589",
+  "./bm": "63776",
+  "./bm.js": "63776",
+  "./bn": "64802",
+  "./bn-bd": "98827",
+  "./bn-bd.js": "98827",
+  "./bn.js": "64802",
+  "./bo": "25339",
+  "./bo.js": "25339",
+  "./br": "77228",
+  "./br.js": "77228",
+  "./bs": "43693",
+  "./bs.js": "43693",
+  "./ca": "79253",
+  "./ca.js": "79253",
+  "./cs": "85211",
+  "./cs.js": "85211",
+  "./cv": "30696",
+  "./cv.js": "30696",
+  "./cy": "28344",
+  "./cy.js": "28344",
+  "./da": "93799",
+  "./da.js": "93799",
+  "./de": "53172",
+  "./de-at": "97043",
+  "./de-at.js": "97043",
+  "./de-ch": "41986",
+  "./de-ch.js": "41986",
+  "./de.js": "53172",
+  "./dv": "14619",
+  "./dv.js": "14619",
+  "./el": "54646",
+  "./el.js": "54646",
+  "./en-au": "89024",
+  "./en-au.js": "89024",
+  "./en-ca": "75172",
+  "./en-ca.js": "75172",
+  "./en-gb": "84450",
+  "./en-gb.js": "84450",
+  "./en-ie": "1544",
+  "./en-ie.js": "1544",
+  "./en-il": "4527",
+  "./en-il.js": "4527",
+  "./en-in": "19452",
+  "./en-in.js": "19452",
+  "./en-nz": "37029",
+  "./en-nz.js": "37029",
+  "./en-sg": "58525",
+  "./en-sg.js": "58525",
+  "./eo": "85952",
+  "./eo.js": "85952",
+  "./es": "68362",
+  "./es-do": "84646",
+  "./es-do.js": "84646",
+  "./es-mx": "55501",
+  "./es-mx.js": "55501",
+  "./es-us": "79158",
+  "./es-us.js": "79158",
+  "./es.js": "68362",
+  "./et": "14910",
+  "./et.js": "14910",
+  "./eu": "66055",
+  "./eu.js": "66055",
+  "./fa": "27088",
+  "./fa.js": "27088",
+  "./fi": "84834",
+  "./fi.js": "84834",
+  "./fil": "26652",
+  "./fil.js": "26652",
+  "./fo": "60403",
+  "./fo.js": "60403",
+  "./fr": "10478",
+  "./fr-ca": "26968",
+  "./fr-ca.js": "26968",
+  "./fr-ch": "98424",
+  "./fr-ch.js": "98424",
+  "./fr.js": "10478",
+  "./fy": "32505",
+  "./fy.js": "32505",
+  "./ga": "4847",
+  "./ga.js": "4847",
+  "./gd": "68148",
+  "./gd.js": "68148",
+  "./gl": "81168",
+  "./gl.js": "81168",
+  "./gom-deva": "79164",
+  "./gom-deva.js": "79164",
+  "./gom-latn": "34563",
+  "./gom-latn.js": "34563",
+  "./gu": "81783",
+  "./gu.js": "81783",
+  "./he": "88777",
+  "./he.js": "88777",
+  "./hi": "26028",
+  "./hi.js": "26028",
+  "./hr": "72867",
+  "./hr.js": "72867",
+  "./hu": "92920",
+  "./hu.js": "92920",
+  "./hy-am": "33830",
+  "./hy-am.js": "33830",
+  "./id": "5116",
+  "./id.js": "5116",
+  "./is": "87909",
+  "./is.js": "87909",
+  "./it": "90599",
+  "./it-ch": "83995",
+  "./it-ch.js": "83995",
+  "./it.js": "90599",
+  "./ja": "77273",
+  "./ja.js": "77273",
+  "./jv": "48143",
+  "./jv.js": "48143",
+  "./ka": "17992",
+  "./ka.js": "17992",
+  "./kk": "89549",
+  "./kk.js": "89549",
+  "./km": "17852",
+  "./km.js": "17852",
+  "./kn": "73681",
+  "./kn.js": "73681",
+  "./ko": "74349",
+  "./ko.js": "74349",
+  "./ku": "3310",
+  "./ku.js": "3310",
+  "./ky": "46586",
+  "./ky.js": "46586",
+  "./lb": "43874",
+  "./lb.js": "43874",
+  "./lo": "25774",
+  "./lo.js": "25774",
+  "./lt": "69147",
+  "./lt.js": "69147",
+  "./lv": "37406",
+  "./lv.js": "37406",
+  "./me": "69288",
+  "./me.js": "69288",
+  "./mi": "92455",
+  "./mi.js": "92455",
+  "./mk": "82788",
+  "./mk.js": "82788",
+  "./ml": "75417",
+  "./ml.js": "75417",
+  "./mn": "96783",
+  "./mn.js": "96783",
+  "./mr": "44563",
+  "./mr.js": "44563",
+  "./ms": "32084",
+  "./ms-my": "45669",
+  "./ms-my.js": "45669",
+  "./ms.js": "32084",
+  "./mt": "40710",
+  "./mt.js": "40710",
+  "./my": "29758",
+  "./my.js": "29758",
+  "./nb": "90575",
+  "./nb.js": "90575",
+  "./ne": "23209",
+  "./ne.js": "23209",
+  "./nl": "88609",
+  "./nl-be": "93890",
+  "./nl-be.js": "93890",
+  "./nl.js": "88609",
+  "./nn": "81640",
+  "./nn.js": "81640",
+  "./oc-lnc": "35480",
+  "./oc-lnc.js": "35480",
+  "./pa-in": "68865",
+  "./pa-in.js": "68865",
+  "./pl": "34971",
+  "./pl.js": "34971",
+  "./pt": "45074",
+  "./pt-br": "20752",
+  "./pt-br.js": "20752",
+  "./pt.js": "45074",
+  "./ro": "51736",
+  "./ro.js": "51736",
+  "./ru": "6648",
+  "./ru.js": "6648",
+  "./sd": "78305",
+  "./sd.js": "78305",
+  "./se": "30630",
+  "./se.js": "30630",
+  "./si": "6146",
+  "./si.js": "6146",
+  "./sk": "78687",
+  "./sk.js": "78687",
+  "./sl": "85253",
+  "./sl.js": "85253",
+  "./sq": "88332",
+  "./sq.js": "88332",
+  "./sr": "81770",
+  "./sr-cyrl": "60249",
+  "./sr-cyrl.js": "60249",
+  "./sr.js": "81770",
+  "./ss": "75539",
+  "./ss.js": "75539",
+  "./sv": "26340",
+  "./sv.js": "26340",
+  "./sw": "33194",
+  "./sw.js": "33194",
+  "./ta": "94984",
+  "./ta.js": "94984",
+  "./te": "47504",
+  "./te.js": "47504",
+  "./tet": "52261",
+  "./tet.js": "52261",
+  "./tg": "19454",
+  "./tg.js": "19454",
+  "./th": "74174",
+  "./th.js": "74174",
+  "./tk": "32244",
+  "./tk.js": "32244",
+  "./tl-ph": "5038",
+  "./tl-ph.js": "5038",
+  "./tlh": "77467",
+  "./tlh.js": "77467",
+  "./tr": "81434",
+  "./tr.js": "81434",
+  "./tzl": "10757",
+  "./tzl.js": "10757",
+  "./tzm": "41633",
+  "./tzm-latn": "34978",
+  "./tzm-latn.js": "34978",
+  "./tzm.js": "41633",
+  "./ug-cn": "57744",
+  "./ug-cn.js": "57744",
+  "./uk": "6470",
+  "./uk.js": "6470",
+  "./ur": "55263",
+  "./ur.js": "55263",
+  "./uz": "94112",
+  "./uz-latn": "60816",
+  "./uz-latn.js": "60816",
+  "./uz.js": "94112",
+  "./vi": "23243",
+  "./vi.js": "23243",
+  "./x-pseudo": "3633",
+  "./x-pseudo.js": "3633",
+  "./yo": "42710",
+  "./yo.js": "42710",
+  "./zh-cn": "84764",
+  "./zh-cn.js": "84764",
+  "./zh-hk": "77737",
+  "./zh-hk.js": "77737",
+  "./zh-mo": "2156",
+  "./zh-mo.js": "2156",
+  "./zh-tw": "13175",
+  "./zh-tw.js": "13175"
+};
+
+
+function webpackContext(req) {
+  var id = webpackContextResolve(req);
+  return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+  if(!__webpack_require__.o(map, req)) {
+    var e = new Error("Cannot find module '" + req + "'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+  }
+  return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+  return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 48826;
+
+
+}),
+86612: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _call_super = __webpack_require__(62170);
+var _class_call_check = __webpack_require__(81230);
+var _create_class = __webpack_require__(55739);
+var _inherits = __webpack_require__(50573);
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _reactnativepaper = __webpack_require__(99537);
+var _MaterialCommunityIcons = /*#__PURE__*/ _interop_require_default._(__webpack_require__(17813));
+var ErrorBoundary = /*#__PURE__*/ function(_React_Component) {
+    "use strict";
+    _inherits._(ErrorBoundary, _React_Component);
+    function ErrorBoundary(props) {
+        _class_call_check._(this, ErrorBoundary);
+        var _this;
+        _this = _call_super._(this, ErrorBoundary, [
+            props
+        ]);
+        _this.name = props.name;
+        _this.state = {
+            hasError: false
+        };
+        return _this;
+    }
+    _create_class._(ErrorBoundary, [
+        {
+            key: "componentDidCatch",
+            value: function componentDidCatch(error, errorInfo) {
+                console.log(error, errorInfo);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                if (this.state.hasError) {
+                    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.SafeAreaView, {
+                        style: styles.container,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)(_MaterialCommunityIcons.default, {
+                                size: 96,
+                                color: _reactnativepaper.MD3Colors.primary20,
+                                name: "alert-octagon"
+                            }),
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                                style: styles.text,
+                                children: `Failed to load ${this.name}`
+                            })
+                        ]
+                    });
+                }
+                return this.props.children;
+            }
+        }
+    ], [
+        {
+            key: "getDerivedStateFromError",
+            value: function getDerivedStateFromError() {
+                return {
+                    hasError: true
+                };
+            }
+        }
+    ]);
+    return ErrorBoundary;
+}(_react.default.Component);
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    text: {
+        fontSize: 24,
+        color: _reactnativepaper.MD3Colors.primary20,
+        textAlign: 'center'
+    }
+});
+var _default = ErrorBoundary;
+
+
+}),
+84979: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnativepaper = __webpack_require__(99537);
+var NavBar = (ref)=>{
+    var navigation = ref.navigation, back = ref.back, route = ref.route, options = ref.options;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Appbar.Header, {
+        elevated: true,
+        style: {
+            backgroundColor: _reactnativepaper.MD3Colors.primary95
+        },
+        children: [
+            back ? /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Appbar.BackAction, {
+                onPress: navigation.goBack
+            }) : null,
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Appbar.Content, {
+                title: options.title ?? route.name
+            })
+        ]
+    });
+};
+var _default = NavBar;
+
+
+}),
+40476: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _MaterialCommunityIcons = /*#__PURE__*/ _interop_require_default._(__webpack_require__(17813));
+var _reactnativepaper = __webpack_require__(99537);
+var Placeholder = (ref)=>{
+    var label = ref.label, icon = ref.icon;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.SafeAreaView, {
+        style: styles.container,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_MaterialCommunityIcons.default, {
+                size: 96,
+                color: _reactnativepaper.MD3Colors.primary20,
+                name: icon
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                style: styles.text,
+                children: label
+            })
+        ]
+    });
+};
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    text: {
+        fontSize: 24,
+        color: _reactnativepaper.MD3Colors.primary20
+    }
+});
+var _default = Placeholder;
+
+
+}),
+58425: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _reactnativepaper = __webpack_require__(99537);
+var ScreenPlaceholder = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.View, {
+        style: styles.container,
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+            style: styles.title,
+            children: "Not implemented yet"
+        })
+    });
+};
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    title: {
+        fontSize: 24
+    }
+});
+var _default = ScreenPlaceholder;
+
+
+}),
+27145: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _nativestack = __webpack_require__(67992);
+var _NavBar = /*#__PURE__*/ _interop_require_default._(__webpack_require__(84979));
+var _AccountScreen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(81545));
+var Account = (0, _nativestack.createNativeStackNavigator)();
+var AccountNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Account.Navigator, {
+        screenOptions: {
+            header: _NavBar.default
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Account.Screen, {
+            name: "Account",
+            component: _AccountScreen.default
+        })
+    });
+};
+var _default = AccountNavigator;
+
+
+}),
+14497: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _nativestack = __webpack_require__(67992);
+var _NavBar = /*#__PURE__*/ _interop_require_default._(__webpack_require__(84979));
+var _CalendarScreen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(27812));
+var Calendar = (0, _nativestack.createNativeStackNavigator)();
+var CalendarNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Calendar.Navigator, {
+        screenOptions: {
+            header: _NavBar.default
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Calendar.Screen, {
+            name: "Calendar",
+            component: _CalendarScreen.default
+        })
+    });
+};
+var _default = CalendarNavigator;
+
+
+}),
+90477: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _nativestack = __webpack_require__(67992);
+var _HomeScreen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(96599));
+var _NavBar = /*#__PURE__*/ _interop_require_default._(__webpack_require__(84979));
+var Home = (0, _nativestack.createNativeStackNavigator)();
+var HomeNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Home.Navigator, {
+        screenOptions: {
+            header: _NavBar.default,
+            title: 'Dashboard'
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Home.Screen, {
+            name: "Home",
+            component: _HomeScreen.default
+        })
+    });
+};
+var _default = HomeNavigator;
+
+
+}),
+1660: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _nativestack = __webpack_require__(67992);
+var _TabsNavigator = /*#__PURE__*/ _interop_require_default._(__webpack_require__(58802));
+var Main = (0, _nativestack.createNativeStackNavigator)();
+var MainNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Main.Navigator, {
+        screenOptions: {
+            headerShown: false
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Main.Screen, {
+            name: "Tabs",
+            component: _TabsNavigator.default
+        })
+    });
+};
+var _default = MainNavigator;
+
+
+}),
+81378: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _nativestack = __webpack_require__(67992);
+var _NavBar = /*#__PURE__*/ _interop_require_default._(__webpack_require__(84979));
+var _StatisticsScreen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(59295));
+var Statistics = (0, _nativestack.createNativeStackNavigator)();
+var StatisticsNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Statistics.Navigator, {
+        screenOptions: {
+            header: _NavBar.default
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Statistics.Screen, {
+            name: "Statistics",
+            component: _StatisticsScreen.default
+        })
+    });
+};
+var _default = StatisticsNavigator;
+
+
+}),
+58802: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnavigation = __webpack_require__(69901);
+var _reactnativepaper = __webpack_require__(99537);
+var _MaterialCommunityIcons = /*#__PURE__*/ _interop_require_default._(__webpack_require__(17813));
+var _HomeNavigator = /*#__PURE__*/ _interop_require_default._(__webpack_require__(90477));
+var _CalendarNavigator = /*#__PURE__*/ _interop_require_default._(__webpack_require__(14497));
+var _StatisticsNavigator = /*#__PURE__*/ _interop_require_default._(__webpack_require__(81378));
+var _AccountNavigator = /*#__PURE__*/ _interop_require_default._(__webpack_require__(27145));
+var homeIcon = _MaterialCommunityIcons.default.getImageSourceSync('home', 24);
+var calendarIcon = _MaterialCommunityIcons.default.getImageSourceSync('calendar', 24);
+var chartBoxIcon = _MaterialCommunityIcons.default.getImageSourceSync('chart-box', 24);
+var accountIcon = _MaterialCommunityIcons.default.getImageSourceSync('account', 24);
+var Tabs = (0, _reactnavigation.createNativeBottomTabNavigator)();
+var TabsNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(Tabs.Navigator, {
+        translucent: false,
+        tabBarActiveTintColor: _reactnativepaper.MD3Colors.primary50,
+        barTintColor: _reactnativepaper.MD3Colors.primary95,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(Tabs.Screen, {
+                name: "HomeNavigator",
+                component: _HomeNavigator.default,
+                options: {
+                    title: 'Home',
+                    tabBarIcon: ()=>homeIcon
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(Tabs.Screen, {
+                name: "CalendarNavigator",
+                component: _CalendarNavigator.default,
+                options: {
+                    title: 'Calendar',
+                    tabBarIcon: ()=>calendarIcon
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(Tabs.Screen, {
+                name: "StatisticsNavigator",
+                component: _StatisticsNavigator.default,
+                options: {
+                    title: 'Statistics',
+                    tabBarIcon: ()=>chartBoxIcon
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(Tabs.Screen, {
+                name: "AccountNavigator",
+                component: _AccountNavigator.default,
+                options: {
+                    title: 'Account',
+                    tabBarIcon: ()=>accountIcon
+                }
+            })
+        ]
+    });
+};
+var _default = TabsNavigator;
+
+
+}),
+81545: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _ErrorBoundary = /*#__PURE__*/ _interop_require_default._(__webpack_require__(86612));
+var _Placeholder = /*#__PURE__*/ _interop_require_default._(__webpack_require__(40476));
+var Account = /*#__PURE__*/ _react.default.lazy(()=>__webpack_require__.e(/* import() */ "webpack_container_remote_auth_AccountScreen").then(__webpack_require__.t.bind(__webpack_require__, 70609, 23)));
+var AccountScreen = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_ErrorBoundary.default, {
+        name: "AccountScreen",
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.default.Suspense, {
+            fallback: /*#__PURE__*/ (0, _jsxruntime.jsx)(_Placeholder.default, {
+                label: "Account",
+                icon: "account"
+            }),
+            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Account, {})
+        })
+    });
+};
+var _default = AccountScreen;
+
+
+}),
+27812: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _interop_require_wildcard = __webpack_require__(66568);
+var _object_spread = __webpack_require__(41112);
+var _object_spread_props = __webpack_require__(2898);
+var _sliced_to_array = __webpack_require__(17738);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _reactnativecalendars = __webpack_require__(17762);
+var _reactnativepaper = __webpack_require__(99537);
+var _bookingsjson = /*#__PURE__*/ _interop_require_default._(__webpack_require__(44468));
+var INITIAL_DATE = _reactnativecalendars.CalendarUtils.getCalendarDateString(new Date());
+var renderAppointment = (ref)=>{
+    var item = ref.item;
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.List.Item, {
+        title: `${item.title} • ${item.provider}`,
+        description: `${item.date} ${item.time}`,
+        left: (props)=>/*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.List.Icon, _object_spread_props._(_object_spread._({}, props), {
+                icon: "calendar"
+            }))
+    });
+};
+var CalendarScreen = ()=>{
+    var _useState = _sliced_to_array._((0, _react.useState)(INITIAL_DATE), 2), selected = _useState[0], setSelected = _useState[1];
+    var marked = (0, _react.useMemo)(()=>{
+        return {
+            [selected]: {
+                selected: true,
+                disableTouchEvent: true
+            },
+            [INITIAL_DATE]: {
+                selected: true,
+                selectedColor: _reactnativepaper.MD3Colors.primary50
+            }
+        };
+    }, [
+        selected
+    ]);
+    var onDayPress = (0, _react.useCallback)((day)=>{
+        setSelected(day.dateString);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+        style: styles.container,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativecalendars.CalendarList, {
+                horizontal: true,
+                pagingEnabled: true,
+                hideExtraDays: false,
+                current: INITIAL_DATE,
+                markedDates: marked,
+                onDayPress: onDayPress,
+                theme: {
+                    backgroundColor: 'black',
+                    textSectionTitleColor: 'black',
+                    dayTextColor: 'black',
+                    monthTextColor: 'black',
+                    indicatorColor: 'black',
+                    selectedDayBackgroundColor: _reactnativepaper.MD3Colors.secondary50
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, {
+                data: _bookingsjson.default.data,
+                renderItem: renderAppointment
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.FAB, {
+                icon: "plus",
+                color: _reactnativepaper.MD3Colors.primary50,
+                style: styles.fab,
+                onPress: ()=>{}
+            })
+        ]
+    });
+};
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+    fab: {
+        position: 'absolute',
+        right: 0,
+        margin: 16,
+        bottom: 0
+    }
+});
+var _default = CalendarScreen;
+
+
+}),
+96599: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _object_spread = __webpack_require__(41112);
+var _object_spread_props = __webpack_require__(2898);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _reactnative = __webpack_require__(38160);
+var _reactnativepaper = __webpack_require__(99537);
+var _bookingsjson = /*#__PURE__*/ _interop_require_default._(__webpack_require__(44468));
+var _productsjson = /*#__PURE__*/ _interop_require_default._(__webpack_require__(95651));
+var _newsjson = /*#__PURE__*/ _interop_require_default._(__webpack_require__(56679));
+var _articlesjson = /*#__PURE__*/ _interop_require_default._(__webpack_require__(36229));
+var showNotImplementedAlert = ()=>_reactnative.Alert.alert('Not implemented yet');
+var renderUpcoming = (ref)=>{
+    var item = ref.item;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card, {
+        mode: "contained",
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Card.Title, {
+                titleVariant: "titleMedium",
+                subtitleVariant: "bodyMedium",
+                title: `${item.title} • ${item.provider}`,
+                subtitle: `${item.date} ${item.time}`,
+                left: (props)=>/*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Avatar.Icon, _object_spread_props._(_object_spread._({}, props), {
+                        icon: "calendar"
+                    }))
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card.Actions, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "text",
+                        onPress: showNotImplementedAlert,
+                        children: "Cancel"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "contained",
+                        onPress: showNotImplementedAlert,
+                        children: "Edit"
+                    })
+                ]
+            })
+        ]
+    });
+};
+var renderProduct = (ref)=>{
+    var item = ref.item, index = ref.index;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card, {
+        mode: "contained",
+        style: styles.cardWidth,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Card.Cover, {
+                source: {
+                    uri: `${item.image}?${index}`
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card.Content, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Title, {
+                        children: `${item.name} • $${item.price}`
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Paragraph, {
+                        numberOfLines: 1,
+                        children: item.description
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card.Actions, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        onPress: showNotImplementedAlert,
+                        children: "Delete"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        onPress: showNotImplementedAlert,
+                        children: "Edit"
+                    })
+                ]
+            })
+        ]
+    });
+};
+var renderArticle = (ref)=>{
+    var item = ref.item, index = ref.index;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card, {
+        mode: "contained",
+        style: styles.cardWidth,
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Card.Cover, {
+                source: {
+                    uri: `${item.image}?${index}`
+                }
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card.Content, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Title, {
+                        children: item.title
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Paragraph, {
+                        numberOfLines: 3,
+                        children: item.content
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnativepaper.Card.Actions, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        onPress: showNotImplementedAlert,
+                        children: "Delete"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        onPress: showNotImplementedAlert,
+                        children: "Edit"
+                    })
+                ]
+            })
+        ]
+    });
+};
+var renderDivider = ()=>/*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Divider, {
+        style: styles.divider
+    });
+var HomeScreen = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.ScrollView, {
+        style: styles.container,
+        contentInsetAdjustmentBehavior: "automatic",
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                style: styles.header,
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                        variant: "titleLarge",
+                        style: styles.headerTitle,
+                        children: "My Appointments"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "contained-tonal",
+                        onPress: showNotImplementedAlert,
+                        children: "Manage"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, {
+                horizontal: true,
+                showsHorizontalScrollIndicator: false,
+                data: _bookingsjson.default.data,
+                renderItem: renderUpcoming,
+                ItemSeparatorComponent: renderDivider,
+                contentContainerStyle: styles.contentContainer
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                style: styles.header,
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                        variant: "titleLarge",
+                        style: styles.headerTitle,
+                        children: "My Products"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "contained-tonal",
+                        onPress: showNotImplementedAlert,
+                        children: "Manage"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, {
+                horizontal: true,
+                showsHorizontalScrollIndicator: false,
+                data: _productsjson.default.data,
+                renderItem: renderProduct,
+                ItemSeparatorComponent: renderDivider,
+                contentContainerStyle: styles.contentContainer
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                style: styles.header,
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                        variant: "titleLarge",
+                        style: styles.headerTitle,
+                        children: "My News"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "contained-tonal",
+                        onPress: showNotImplementedAlert,
+                        children: "Manage"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, {
+                horizontal: true,
+                showsHorizontalScrollIndicator: false,
+                data: _newsjson.default.data,
+                renderItem: renderArticle,
+                ItemSeparatorComponent: renderDivider,
+                contentContainerStyle: styles.contentContainer
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                style: styles.header,
+                children: [
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Text, {
+                        variant: "titleLarge",
+                        style: styles.headerTitle,
+                        children: "My Articles"
+                    }),
+                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Button, {
+                        mode: "contained-tonal",
+                        onPress: showNotImplementedAlert,
+                        children: "Manage"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, {
+                horizontal: true,
+                showsHorizontalScrollIndicator: false,
+                data: _articlesjson.default.data,
+                renderItem: renderArticle,
+                ItemSeparatorComponent: renderDivider,
+                contentContainerStyle: styles.contentContainer
+            })
+        ]
+    });
+};
+var styles = _reactnative.StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+    contentContainer: {
+        paddingHorizontal: 16
+    },
+    divider: {
+        backgroundColor: 'transparent',
+        width: 16
+    },
+    header: {
+        padding: 16,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    headerTitle: {
+        flex: 1
+    },
+    cardWidth: {
+        width: 270
+    }
+});
+var _default = HomeScreen;
+
+
+}),
+59295: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(97433);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _ScreenPlaceholder = /*#__PURE__*/ _interop_require_default._(__webpack_require__(58425));
+var StatisticsScreen = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_ScreenPlaceholder.default, {});
+};
+var _default = StatisticsScreen;
+
+
+}),
+36229: (function (module) {
+"use strict";
+module.exports = JSON.parse('{"data":[{"id":"1","title":"Article 1","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"2","title":"Article 2","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"3","title":"Article 3","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"4","title":"Article 4","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."}]}')
+
+}),
+44468: (function (module) {
+"use strict";
+module.exports = JSON.parse('{"data":[{"id":"1","title":"Haircut","provider":"John Doe","date":"01.01.2018","time":"10:00"},{"id":"2","title":"Coloring","provider":"John Doe","date":"02.01.2018","time":"09:00"},{"id":"3","title":"Beard trim","provider":"John Doe","date":"03.01.2018","time":"12:00"},{"id":"4","title":"Beard shave","provider":"John Doe","date":"04.01.2018","time":"12:00"},{"id":"5","title":"Haircut","provider":"John Doe","date":"05.01.2018","time":"12:00"},{"id":"6","title":"Haircut","provider":"John Doe","date":"06.01.2018","time":"12:00"},{"id":"7","title":"Nail polish","provider":"John Doe","date":"07.01.2018","time":"12:00"},{"id":"8","title":"Head massage","provider":"John Doe","date":"08.01.2018","time":"12:00"}]}')
+
+}),
+56679: (function (module) {
+"use strict";
+module.exports = JSON.parse('{"data":[{"id":"1","title":"News 1","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"2","title":"News 2","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"3","title":"News 3","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."},{"id":"4","title":"News 4","image":"https://picsum.photos/700","content":"Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."}]}')
+
+}),
+95651: (function (module) {
+"use strict";
+module.exports = JSON.parse('{"data":[{"id":"1","price":"100","name":"Shampoo","description":"Shampoo for hair","image":"https://picsum.photos/700"},{"id":"2","price":"200","name":"Conditioner","description":"Conditioner for hair and scalp","image":"https://picsum.photos/700"},{"id":"3","price":"300","name":"Hair Oil","description":"Hair Oil for hair growth","image":"https://picsum.photos/700"},{"id":"4","price":"400","name":"Hair Gel","description":"Hair Gel for hair styling","image":"https://picsum.photos/700"}]}')
+
+}),
+
+}]);//# sourceMappingURL=__federation_expose_App.chunk.bundle.map?platform=android

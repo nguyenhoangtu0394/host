@@ -1,0 +1,264 @@
+(self["webpackChunksas_auth"] = self["webpackChunksas_auth"] || []).push([["__federation_expose_AuthProvider"], {
+2898: (function (__unused_webpack_module, exports) {
+"use strict";
+
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+exports._ = _object_spread_props;
+
+
+}),
+78190: (function (__unused_webpack_module, exports) {
+"use strict";
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 
+var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+    var key = null;
+    void 0 !== maybeKey && (key = "" + maybeKey);
+    void 0 !== config.key && (key = "" + config.key);
+    if ("key" in config) {
+        maybeKey = {};
+        for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+    } else maybeKey = config;
+    config = maybeKey.ref;
+    return {
+        $$typeof: REACT_ELEMENT_TYPE,
+        type: type,
+        key: key,
+        ref: void 0 !== config ? config : null,
+        props: maybeKey
+    };
+}
+exports.Fragment = REACT_FRAGMENT_TYPE;
+exports.jsx = jsxProd;
+exports.jsxs = jsxProd;
+
+
+}),
+7100: (function (module, __unused_webpack_exports, __webpack_require__) {
+"use strict";
+
+if (true) {
+    module.exports = __webpack_require__(78190);
+} else {}
+
+
+}),
+60668: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    AuthContext: function() {
+        return AuthContext;
+    },
+    useAuth: function() {
+        return useAuth;
+    }
+});
+var _interop_require_default = __webpack_require__(97433);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var AuthContext = _react.default.createContext({
+    signIn: ()=>{},
+    signOut: ()=>{},
+    signUp: ()=>{}
+});
+var useAuth = ()=>_react.default.useContext(AuthContext);
+
+
+}),
+38641: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _class_call_check = __webpack_require__(81230);
+var _create_class = __webpack_require__(55739);
+var _interop_require_default = __webpack_require__(97433);
+var _asyncstorage = /*#__PURE__*/ _interop_require_default._(__webpack_require__(38543));
+var AuthService = /*#__PURE__*/ function() {
+    "use strict";
+    function AuthService() {
+        _class_call_check._(this, AuthService);
+        this.TOKEN_KEY = 'token';
+    }
+    _create_class._(AuthService, [
+        {
+            key: "getCredentials",
+            value: function getCredentials() {
+                return _asyncstorage.default.getItem(this.TOKEN_KEY);
+            }
+        },
+        {
+            key: "setCredentials",
+            value: function setCredentials(token) {
+                return _asyncstorage.default.setItem(this.TOKEN_KEY, token);
+            }
+        },
+        {
+            key: "removeCredentials",
+            value: function removeCredentials() {
+                return _asyncstorage.default.removeItem(this.TOKEN_KEY);
+            }
+        }
+    ]);
+    return AuthService;
+}();
+AuthService.shared = new AuthService();
+var _default = AuthService;
+
+
+}),
+20195: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _async_to_generator = __webpack_require__(12807);
+var _interop_require_default = __webpack_require__(97433);
+var _object_spread = __webpack_require__(41112);
+var _object_spread_props = __webpack_require__(2898);
+var _sliced_to_array = __webpack_require__(17738);
+var _jsxruntime = __webpack_require__(7100);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(92888));
+var _AuthService = /*#__PURE__*/ _interop_require_default._(__webpack_require__(38641));
+var _AuthContext = __webpack_require__(60668);
+var ActionTypes = /*#__PURE__*/ (/* unused pure expression or super */ null && (function(ActionTypes) {
+    ActionTypes["RESTORE_TOKEN"] = "RESTORE_TOKEN";
+    ActionTypes["SIGN_IN"] = "SIGN_IN";
+    ActionTypes["SIGN_OUT"] = "SIGN_OUT";
+    return ActionTypes;
+}(ActionTypes || {})));
+var reducer = (prevState, action)=>{
+    switch(action.type){
+        case "RESTORE_TOKEN":
+            return _object_spread_props._(_object_spread._({}, prevState), {
+                isSignout: action.payload,
+                isLoading: false
+            });
+        case "SIGN_IN":
+            return _object_spread_props._(_object_spread._({}, prevState), {
+                isSignout: false
+            });
+        case "SIGN_OUT":
+            return _object_spread_props._(_object_spread._({}, prevState), {
+                isSignout: true
+            });
+        default:
+            return prevState;
+    }
+};
+var AuthProvider = (ref)=>{
+    var children = ref.children;
+    var _React_useReducer = _sliced_to_array._(_react.default.useReducer(reducer, {
+        isLoading: false,
+        isSignout: false
+    }), 2), state = _React_useReducer[0], dispatch = _React_useReducer[1];
+    var authContext = _react.default.useMemo(()=>({
+            signIn: /*#__PURE__*/ _async_to_generator._(function*() {
+                try {
+                    yield _AuthService.default.shared.setCredentials('dummy-auth-token');
+                } catch (e) {
+                // Handle error
+                }
+                dispatch({
+                    type: "SIGN_IN"
+                });
+            }),
+            signOut: /*#__PURE__*/ _async_to_generator._(function*() {
+                try {
+                    yield _AuthService.default.shared.removeCredentials();
+                } catch (e) {
+                // Handle error
+                }
+                dispatch({
+                    type: "SIGN_OUT"
+                });
+            }),
+            signUp: /*#__PURE__*/ _async_to_generator._(function*() {
+                try {
+                    yield _AuthService.default.shared.setCredentials('dummy-auth-token');
+                } catch (e) {
+                // Handle error
+                }
+                dispatch({
+                    type: "SIGN_IN"
+                });
+            })
+        }), []);
+    _react.default.useEffect(()=>{
+        var restoreToken = /*#__PURE__*/ function() {
+            var _ref = _async_to_generator._(function*() {
+                var userToken;
+                try {
+                    userToken = yield _AuthService.default.shared.getCredentials();
+                } catch (e) {
+                // Handle error
+                }
+                dispatch({
+                    type: "RESTORE_TOKEN",
+                    payload: !userToken
+                });
+            });
+            return function restoreToken() {
+                return _ref.apply(this, arguments);
+            };
+        }();
+        restoreToken();
+    }, []);
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_AuthContext.AuthContext.Provider, {
+        value: authContext,
+        children: children(state)
+    });
+};
+var _default = AuthProvider;
+
+
+}),
+
+}]);//# sourceMappingURL=__federation_expose_AuthProvider.chunk.bundle.map?platform=android
