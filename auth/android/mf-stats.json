@@ -161,8 +161,8 @@
         }
       },
       "usedIn": [
-        "./SignInScreen",
-        "./AccountScreen"
+        "./AccountScreen",
+        "./SignInScreen"
       ]
     },
     {
