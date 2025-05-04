@@ -49,7 +49,7 @@
       "name": "react",
       "version": "19.1.0",
       "singleton": true,
-      "requiredVersion": "19.1.0",
+      "requiredVersion": "^19.1.0",
       "assets": {
         "js": {
           "async": [],
@@ -85,14 +85,14 @@
     {
       "id": "claim:@react-navigation/native",
       "name": "@react-navigation/native",
-      "version": "7.0.14",
+      "version": "6.1.18",
       "singleton": true,
-      "requiredVersion": "7.0.14",
+      "requiredVersion": "6.1.18",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "vendors-node_modules_react-navigation_native_lib_commonjs_index_js.chunk.bundle"
+            "vendors-node_modules_react-navigation_native_src_index_tsx.chunk.bundle"
           ]
         },
         "css": {
@@ -104,14 +104,14 @@
     {
       "id": "claim:@react-navigation/native-stack",
       "name": "@react-navigation/native-stack",
-      "version": "7.2.0",
+      "version": "6.11.0",
       "singleton": true,
-      "requiredVersion": "7.2.0",
+      "requiredVersion": "6.11.0",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "vendors-node_modules_react-navigation_native-stack_lib_commonjs_index_js.chunk.bundle"
+            "vendors-node_modules_react-navigation_native-stack_src_index_tsx.chunk.bundle"
           ]
         },
         "css": {
@@ -309,25 +309,6 @@
       }
     },
     {
-      "id": "claim:@react-navigation/elements",
-      "name": "@react-navigation/elements",
-      "version": "2.3.8",
-      "singleton": true,
-      "requiredVersion": "2.3.8",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "vendors-node_modules_react-navigation_elements_lib_module_index_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
       "id": "claim:react-native-screens",
       "name": "react-native-screens",
       "version": "4.10.0",
@@ -484,6 +465,25 @@
       }
     },
     {
+      "id": "claim:react-native/Libraries/ReactNative/AppContainer",
+      "name": "react-native/Libraries/ReactNative/AppContainer",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "index.bundle",
+            "vendors-node_modules_react-native_Libraries_ReactNative_AppContainer_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
       "id": "claim:react-native/Libraries/Components/View/ReactNativeStyleAttributes",
       "name": "react-native/Libraries/Components/View/ReactNativeStyleAttributes",
       "version": "*",
@@ -539,25 +539,6 @@
           "sync": []
         }
       }
-    },
-    {
-      "id": "claim:react-native/Libraries/ReactNative/AppContainer",
-      "name": "react-native/Libraries/ReactNative/AppContainer",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "index.bundle",
-            "vendors-node_modules_react-native_Libraries_ReactNative_AppContainer_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
     }
   ],
   "remotes": [],
@@ -576,7 +557,7 @@
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8931.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8930.chunk.bundle",
             "node_modules_react-native_Libraries_StyleSheet_flattenStyle_js-node_modules_react-native_Libr-39d9ac.chunk.bundle",
-            "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8933.chunk.bundle"
+            "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8932.chunk.bundle"
           ]
         },
         "css": {
