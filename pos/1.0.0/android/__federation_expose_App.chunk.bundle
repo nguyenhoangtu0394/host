@@ -108,38 +108,42 @@ exports._ = _object_without_properties_loose;
 
 
 }),
-1361: (function (__unused_webpack_module, exports) {
+10743: (function (__unused_webpack_module, exports, __webpack_require__) {
 "use strict";
 /**
  * @license React
- * react-jsx-runtime.production.js
+ * react-jsx-runtime.production.min.js
  *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */ 
-var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-function jsxProd(type, config, maybeKey) {
-    var key = null;
-    void 0 !== maybeKey && (key = "" + maybeKey);
-    void 0 !== config.key && (key = "" + config.key);
-    if ("key" in config) {
-        maybeKey = {};
-        for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
-    } else maybeKey = config;
-    config = maybeKey.ref;
+var f = __webpack_require__(73551), k = Symbol.for("react.element"), l = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, n = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = {
+    key: !0,
+    ref: !0,
+    __self: !0,
+    __source: !0
+};
+function q(c, a, g) {
+    var b, d = {}, e = null, h = null;
+    void 0 !== g && (e = "" + g);
+    void 0 !== a.key && (e = "" + a.key);
+    void 0 !== a.ref && (h = a.ref);
+    for(b in a)m.call(a, b) && !p.hasOwnProperty(b) && (d[b] = a[b]);
+    if (c && c.defaultProps) for(b in a = c.defaultProps, a)void 0 === d[b] && (d[b] = a[b]);
     return {
-        $$typeof: REACT_ELEMENT_TYPE,
-        type: type,
-        key: key,
-        ref: void 0 !== config ? config : null,
-        props: maybeKey
+        $$typeof: k,
+        type: c,
+        key: e,
+        ref: h,
+        props: d,
+        _owner: n.current
     };
 }
-exports.Fragment = REACT_FRAGMENT_TYPE;
-exports.jsx = jsxProd;
-exports.jsxs = jsxProd;
+exports.Fragment = l;
+exports.jsx = q;
+exports.jsxs = q;
 
 
 }),
@@ -147,7 +151,7 @@ exports.jsxs = jsxProd;
 "use strict";
 
 if (true) {
-    module.exports = __webpack_require__(1361);
+    module.exports = __webpack_require__(10743);
 } else {}
 
 
@@ -216,7 +220,7 @@ Object.defineProperty(exports, "default", ({
 var _interop_require_default = __webpack_require__(66705);
 var _object_spread = __webpack_require__(36192);
 var _to_consumable_array = __webpack_require__(92716);
-var _reactquery = __webpack_require__(31769);
+var _reactquery = __webpack_require__(68390);
 var _placeholder = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4556));
 var fetchTodoListQueryOptions = ()=>{
     return (0, _reactquery.queryOptions)({
@@ -255,7 +259,7 @@ Object.defineProperty(exports, "default", ({
         return _default;
     }
 }));
-var _react = __webpack_require__(43348);
+var _react = __webpack_require__(73551);
 var _apis = __webpack_require__(30821);
 var _GlobalLoading = __webpack_require__(79748);
 var useFetchTodo = (id)=>{
@@ -283,7 +287,7 @@ Object.defineProperty(exports, "default", ({
         return _default;
     }
 }));
-var _react = __webpack_require__(43348);
+var _react = __webpack_require__(73551);
 var _apis = __webpack_require__(30821);
 var _GlobalLoading = __webpack_require__(79748);
 var useFetchTodoList = ()=>{
@@ -313,7 +317,7 @@ Object.defineProperty(exports, "default", ({
 }));
 var _class_call_check = __webpack_require__(8864);
 var _interop_require_default = __webpack_require__(66705);
-var _axios = /*#__PURE__*/ _interop_require_default._(__webpack_require__(47846));
+var _axios = /*#__PURE__*/ _interop_require_default._(__webpack_require__(2194));
 var PlaceholderService = function PlaceholderService() {
     "use strict";
     _class_call_check._(this, PlaceholderService);
@@ -355,7 +359,7 @@ _export(exports, {
         return isHasValue;
     }
 });
-var _lodash = __webpack_require__(83795);
+var _lodash = __webpack_require__(69284);
 var getUniqueNumber = (()=>{
     var i = 0;
     return ()=>{
@@ -396,8 +400,8 @@ var _object_spread = __webpack_require__(36192);
 var _object_spread_props = __webpack_require__(83590);
 var _object_without_properties = __webpack_require__(86136);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
 var FlatList = (props)=>{
     var showsHorizontalScrollIndicator = props.showsHorizontalScrollIndicator, showsVerticalScrollIndicator = props.showsVerticalScrollIndicator, children = props.children, restProps = _object_without_properties._(props, [
         "showsHorizontalScrollIndicator",
@@ -439,9 +443,9 @@ _export(exports, {
 var _interop_require_wildcard = __webpack_require__(83610);
 var _sliced_to_array = __webpack_require__(78474);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(43348));
-var _reactnativepaper = __webpack_require__(31778);
-var _rxjs = __webpack_require__(90592);
+var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(73551));
+var _reactnativepaper = __webpack_require__(94856);
+var _rxjs = __webpack_require__(87231);
 var loadingObs = new _rxjs.Subject();
 var isInitLoading = false;
 function showLoading() {
@@ -505,10 +509,10 @@ var _interop_require_wildcard = __webpack_require__(83610);
 var _object_without_properties = __webpack_require__(86136);
 var _sliced_to_array = __webpack_require__(78474);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
-var _reactnativepaper = __webpack_require__(31778);
-var _native = __webpack_require__(14097);
+var _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _reactnativepaper = __webpack_require__(94856);
+var _native = __webpack_require__(33177);
 var Header = (props)=>{
     var style = props.style, dark = props.dark, title = props.title, back = props.back, restProps = _object_without_properties._(props, [
         "style",
@@ -580,9 +584,9 @@ var _object_spread = __webpack_require__(36192);
 var _object_spread_props = __webpack_require__(83590);
 var _object_without_properties = __webpack_require__(86136);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
-var _reactnativesafeareacontext = __webpack_require__(33481);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _reactnativesafeareacontext = __webpack_require__(87419);
 var Screen = (props)=>{
     var style = props.style, children = props.children, restProps = _object_without_properties._(props, [
         "style",
@@ -622,8 +626,8 @@ var _object_spread = __webpack_require__(36192);
 var _object_spread_props = __webpack_require__(83590);
 var _object_without_properties = __webpack_require__(86136);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
 var ScrollView = (props)=>{
     var children = props.children, restProps = _object_without_properties._(props, [
         "children"
@@ -704,9 +708,9 @@ _export(exports, {
 var _interop_require_default = __webpack_require__(66705);
 var _object_spread = __webpack_require__(36192);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _native = __webpack_require__(14097);
-var _nativestack = __webpack_require__(25115);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _native = __webpack_require__(33177);
+var _nativestack = __webpack_require__(15320);
 var _ClaimDetail = /*#__PURE__*/ _interop_require_default._(__webpack_require__(44166));
 var _ClaimList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(68720));
 var Stack = (0, _nativestack.createNativeStackNavigator)();
@@ -760,9 +764,9 @@ Object.defineProperty(exports, "default", ({
 }));
 var _interop_require_default = __webpack_require__(66705);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
-var _native = __webpack_require__(14097);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _native = __webpack_require__(33177);
 var _components = __webpack_require__(38176);
 var _useFetchTodo = /*#__PURE__*/ _interop_require_default._(__webpack_require__(28145));
 var ClaimDetailScreen = ()=>{
@@ -804,9 +808,9 @@ Object.defineProperty(exports, "default", ({
 }));
 var _interop_require_default = __webpack_require__(66705);
 var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(43348));
-var _reactnative = __webpack_require__(14411);
-var _native = __webpack_require__(14097);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _native = __webpack_require__(33177);
 var _components = __webpack_require__(38176);
 var _useFetchTodoList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(37034));
 var ClaimListScreen = ()=>{
@@ -866,7 +870,7 @@ var _default = ClaimListScreen;
 
 }),
 85749: (function (module, __unused_webpack_exports, __webpack_require__) {
-var AssetSourceResolver = __webpack_require__(53464);
+var AssetSourceResolver = __webpack_require__(14296);
 if ('default' in AssetSourceResolver) AssetSourceResolver = AssetSourceResolver.default;
 var resolver = new AssetSourceResolver(undefined, undefined, {"name":"summer-d9215212","type":"jpg","httpServerLocation":"https://raw.githubusercontent.com/nguyenhoangtu0394/host/refs/heads/main/pos/android/remote-assets/assets","scales":[1],"height":4000,"width":6000});
 

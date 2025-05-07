@@ -6,7 +6,7 @@
     "type": "app",
     "buildInfo": {
       "buildVersion": "0.0.1",
-      "buildName": "claim"
+      "buildName": "pos"
     },
     "remoteEntry": {
       "name": "pos.container.js.bundle",
@@ -28,9 +28,9 @@
     {
       "id": "pos:react-native",
       "name": "react-native",
-      "version": "0.79.2",
+      "version": "0.77.2",
       "singleton": true,
-      "requiredVersion": "0.79.2",
+      "requiredVersion": "0.77.2",
       "assets": {
         "js": {
           "async": [],
@@ -85,9 +85,9 @@
     {
       "id": "pos:react",
       "name": "react",
-      "version": "19.0.0",
+      "version": "18.3.1",
       "singleton": true,
-      "requiredVersion": "19.0.0",
+      "requiredVersion": "18.3.1",
       "assets": {
         "js": {
           "async": [],
@@ -310,24 +310,6 @@
       }
     },
     {
-      "id": "pos:react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
-      "name": "react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "vendors-node_modules_react-native_Libraries_ReactPrivate_ReactNativePrivateInterface_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
       "id": "pos:@react-native/normalize-colors",
       "name": "@react-native/normalize-colors",
       "version": "*",
@@ -337,6 +319,24 @@
           "async": [],
           "sync": [
             "node_modules_react-native_normalize-colors_index_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pos:react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
+      "name": "react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "vendors-node_modules_react-native_Libraries_ReactPrivate_ReactNativePrivateInterface_js.chunk.bundle"
           ]
         },
         "css": {
@@ -522,6 +522,25 @@
       }
     },
     {
+      "id": "pos:axios",
+      "name": "axios",
+      "version": "1.9.0",
+      "singleton": true,
+      "requiredVersion": "1.9.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "vendors-node_modules_axios_index_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
       "id": "pos:react-native/src/private/featureflags/ReactNativeFeatureFlags",
       "name": "react-native/src/private/featureflags/ReactNativeFeatureFlags",
       "version": "*",
@@ -533,26 +552,7 @@
             "index.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_src_private_featureflags_ReactNat-438b0b.chunk.bundle",
             "node_modules_react-native_src_private_featureflags_ReactNativeFeatureFlags_js.chunk.bundle",
-            "vendors-node_modules_react-native_Libraries_Components_View_ReactNativeStyleAttributes_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
-      "id": "pos:axios",
-      "name": "axios",
-      "version": "1.9.0",
-      "singleton": true,
-      "requiredVersion": "1.9.0",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "vendors-node_modules_axios_index_js.chunk.bundle"
+            "vendors-node_modules_react-native_Libraries_Components_AccessibilityInfo_legacySendAccessibil-7e9cc2.chunk.bundle"
           ]
         },
         "css": {
@@ -574,7 +574,6 @@
           ],
           "async": [
             "vendors-node_modules_react-native_Libraries_TurboModule_TurboModuleRegistry_js.chunk.bundle",
-            "vendors-node_modules_react-native_Libraries_Components_AccessibilityInfo_legacySendAccessibil-192451.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8931.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8930.chunk.bundle",
             "node_modules_react-native_Libraries_StyleSheet_flattenStyle_js-node_modules_react-native_Libr-39d9ac.chunk.bundle",
@@ -598,7 +597,6 @@
           ],
           "async": [
             "vendors-node_modules_react-native_Libraries_TurboModule_TurboModuleRegistry_js.chunk.bundle",
-            "vendors-node_modules_react-native_Libraries_Components_AccessibilityInfo_legacySendAccessibil-192451.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8931.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8930.chunk.bundle"
           ]
