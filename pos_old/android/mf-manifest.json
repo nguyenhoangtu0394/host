@@ -45,6 +45,44 @@
       }
     },
     {
+      "id": "pos:react-native/Libraries/Image/AssetRegistry",
+      "name": "react-native/Libraries/Image/AssetRegistry",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "node_modules_react-native_Libraries_Image_AssetRegistry_js-_ac910.chunk.bundle",
+            "node_modules_react-native_Libraries_Image_AssetRegistry_js-_ac911.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pos:react-native/Libraries/Image/AssetSourceResolver",
+      "name": "react-native/Libraries/Image/AssetSourceResolver",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "index.bundle",
+            "vendors-node_modules_react-native_Libraries_Image_AssetSourceResolver_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
       "id": "pos:react",
       "name": "react",
       "version": "18.3.1",
@@ -112,6 +150,42 @@
           "async": [],
           "sync": [
             "vendors-node_modules_react-navigation_native-stack_src_index_tsx.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pos:@react-native/assets-registry/path-support",
+      "name": "@react-native/assets-registry/path-support",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "node_modules_react-native_assets-registry_path-support_js.chunk.bundle"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pos:@react-native/assets-registry/registry",
+      "name": "@react-native/assets-registry/registry",
+      "version": "*",
+      "requiredVersion": "^*",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "node_modules_react-native_assets-registry_registry_js.chunk.bundle"
           ]
         },
         "css": {
@@ -254,24 +328,6 @@
       }
     },
     {
-      "id": "pos:@react-native/assets-registry/registry",
-      "name": "@react-native/assets-registry/registry",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "node_modules_react-native_assets-registry_registry_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
       "id": "pos:react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
       "name": "react-native/Libraries/ReactPrivate/ReactNativePrivateInterface",
       "version": "*",
@@ -281,25 +337,6 @@
           "async": [],
           "sync": [
             "vendors-node_modules_react-native_Libraries_ReactPrivate_ReactNativePrivateInterface_js.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
-      "id": "pos:react-native/Libraries/Image/AssetSourceResolver",
-      "name": "react-native/Libraries/Image/AssetSourceResolver",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "index.bundle",
-            "vendors-node_modules_react-native_Libraries_Image_AssetSourceResolver_js.chunk.bundle"
           ]
         },
         "css": {
@@ -319,24 +356,6 @@
           "async": [],
           "sync": [
             "vendors-node_modules_react-native-screens_src_index_tsx.chunk.bundle"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      }
-    },
-    {
-      "id": "pos:@react-native/assets-registry/path-support",
-      "name": "@react-native/assets-registry/path-support",
-      "version": "*",
-      "requiredVersion": "^*",
-      "assets": {
-        "js": {
-          "async": [],
-          "sync": [
-            "node_modules_react-native_assets-registry_path-support_js.chunk.bundle"
           ]
         },
         "css": {
@@ -579,7 +598,6 @@
           "async": [
             "vendors-node_modules_react-native_Libraries_TurboModule_TurboModuleRegistry_js.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8931.chunk.bundle",
-            "__federation_expose_App.chunk.bundle",
             "node_modules_invariant_browser_js-node_modules_react-native_Libraries_Utilities_Platform_andr-b4c8930.chunk.bundle"
           ]
         },

@@ -871,6 +871,7 @@ var _default = ClaimListScreen;
 }),
 85749: (function (module, __unused_webpack_exports, __webpack_require__) {
 var AssetSourceResolver = __webpack_require__(14296);
+if ('default' in AssetSourceResolver) AssetSourceResolver = AssetSourceResolver.default;
 var resolver = new AssetSourceResolver(undefined, undefined, {"name":"summer-d9215212","type":"jpg","httpServerLocation":"https://raw.githubusercontent.com/nguyenhoangtu0394/host/refs/heads/main/pos/android/remote-assets/assets","scales":[1],"height":4000,"width":6000});
 
 module.exports = resolver.scaledAssetPath();
