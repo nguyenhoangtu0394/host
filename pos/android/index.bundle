@@ -2128,7 +2128,7 @@ var helpers = {
 };
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.2" : 0;
+    return  true ? "pos:0.0.1" : 0;
 }
 // Function to match a remote with its name and expose
 // id: pkgName(@federation/app1) + expose(button) = @federation/app1/button
@@ -4659,7 +4659,7 @@ var runtimeCore = __webpack_require__(94875);
 // injected by bundler, so it can not use runtime-core stuff
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.2" : 0;
+    return  true ? "pos:0.0.1" : 0;
 }
 function getGlobalFederationInstance(name, version) {
     var buildId = getBuilderId();
@@ -35452,9 +35452,6 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    FlatList: function() {
-        return _FlatList.default;
-    },
     GlobalLoading: function() {
         return _GlobalLoading.default;
     },
@@ -35469,7 +35466,6 @@ _export(exports, {
     }
 });
 var _interop_require_default = __webpack_require__(66705);
-var _FlatList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(69425));
 var _GlobalLoading = /*#__PURE__*/ _interop_require_default._(__webpack_require__(79748));
 var _Screen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(95774));
 var _Header = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4440));
@@ -35691,40 +35687,6 @@ var App = ()=>{
     });
 };
 var _default = App;
-
-
-}),
-69425: (function (__unused_webpack_module, exports, __webpack_require__) {
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-Object.defineProperty(exports, "default", ({
-    enumerable: true,
-    get: function() {
-        return _default;
-    }
-}));
-var _interop_require_default = __webpack_require__(66705);
-var _object_spread = __webpack_require__(36192);
-var _object_spread_props = __webpack_require__(83590);
-var _object_without_properties = __webpack_require__(86136);
-var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
-var _reactnative = __webpack_require__(46264);
-var FlatList = (props)=>{
-    var showsHorizontalScrollIndicator = props.showsHorizontalScrollIndicator, showsVerticalScrollIndicator = props.showsVerticalScrollIndicator, children = props.children, restProps = _object_without_properties._(props, [
-        "showsHorizontalScrollIndicator",
-        "showsVerticalScrollIndicator",
-        "children"
-    ]);
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, _object_spread_props._(_object_spread._({
-        showsHorizontalScrollIndicator: showsHorizontalScrollIndicator || false,
-        showsVerticalScrollIndicator: showsVerticalScrollIndicator || false
-    }, restProps), {
-        children: children
-    }));
-};
-var _default = FlatList;
 
 
 }),
@@ -36208,46 +36170,45 @@ var ClaimListScreen = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Header, {
                 dark: true,
-                title: "Claim list v2"
+                title: "Claim list"
             }),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Screen, {
                 style: {
                     paddingLeft: 16,
                     paddingRight: 16
                 },
-                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.FlatList, {
-                    data: data,
-                    keyExtractor: (item)=>item.id.toString(),
-                    ListHeaderComponent: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Image, {
-                        source: __webpack_require__(85749),
-                        style: {
-                            height: 100,
-                            width: '100%',
-                            aspectRatio: 1
-                        },
-                        resizeMode: "contain"
-                    }),
-                    renderItem: (ref)=>{
-                        var item = ref.item;
-                        return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.TouchableOpacity, {
-                            onPress: ()=>{
-                                navigation.navigate('claimApp', {
-                                    screen: 'claimDetail',
-                                    params: {
-                                        id: item.id
-                                    }
-                                });
-                            },
-                            style: {
-                                backgroundColor: '#d3d3d3',
-                                padding: 16,
-                                marginBottom: 16
-                            },
-                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
-                                children: item.title
-                            })
-                        }, item.id);
-                    }
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.ScrollView, {
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Image, {
+                                source: __webpack_require__(85749),
+                                style: {
+                                    height: 100,
+                                    width: '100%',
+                                    aspectRatio: 1
+                                },
+                                resizeMode: "contain"
+                            }),
+                            data === null || data === void 0 ? void 0 : data.map((item)=>/*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.TouchableOpacity, {
+                                    onPress: ()=>{
+                                        navigation.navigate('claimApp', {
+                                            screen: 'claimDetail',
+                                            params: {
+                                                id: item.id
+                                            }
+                                        });
+                                    },
+                                    style: {
+                                        backgroundColor: '#d3d3d3',
+                                        padding: 16,
+                                        marginBottom: 16
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                                        children: item.title
+                                    })
+                                }, item.id))
+                        ]
+                    })
                 })
             })
         ]

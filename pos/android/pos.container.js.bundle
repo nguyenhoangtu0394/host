@@ -2104,7 +2104,7 @@ var helpers = {
 };
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.2" : 0;
+    return  true ? "pos:0.0.1" : 0;
 }
 // Function to match a remote with its name and expose
 // id: pkgName(@federation/app1) + expose(button) = @federation/app1/button
@@ -4635,7 +4635,7 @@ var runtimeCore = __webpack_require__(94875);
 // injected by bundler, so it can not use runtime-core stuff
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.2" : 0;
+    return  true ? "pos:0.0.1" : 0;
 }
 function getGlobalFederationInstance(name, version) {
     var buildId = getBuilderId();
