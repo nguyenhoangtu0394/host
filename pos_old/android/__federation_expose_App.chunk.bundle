@@ -1,4 +1,4 @@
-(self["webpackChunkpos"] = self["webpackChunkpos"] || []).push([["__federation_expose_MiniProvider"], {
+(self["webpackChunkpos"] = self["webpackChunkpos"] || []).push([["__federation_expose_App"], {
 83610: (function (__unused_webpack_module, exports) {
 "use strict";
 
@@ -167,9 +167,6 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    FlatList: function() {
-        return _FlatList.default;
-    },
     GlobalLoading: function() {
         return _GlobalLoading.default;
     },
@@ -184,7 +181,6 @@ _export(exports, {
     }
 });
 var _interop_require_default = __webpack_require__(66705);
-var _FlatList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(69425));
 var _GlobalLoading = /*#__PURE__*/ _interop_require_default._(__webpack_require__(79748));
 var _Screen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(95774));
 var _Header = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4440));
@@ -192,7 +188,22 @@ var _ScrollView = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4
 
 
 }),
-69425: (function (__unused_webpack_module, exports, __webpack_require__) {
+30821: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "placeholderQuery", ({
+    enumerable: true,
+    get: function() {
+        return _placeholderQuery.default;
+    }
+}));
+var _interop_require_default = __webpack_require__(66705);
+var _placeholderQuery = /*#__PURE__*/ _interop_require_default._(__webpack_require__(29991));
+
+
+}),
+29991: (function (__unused_webpack_module, exports, __webpack_require__) {
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
@@ -204,25 +215,169 @@ Object.defineProperty(exports, "default", ({
 }));
 var _interop_require_default = __webpack_require__(66705);
 var _object_spread = __webpack_require__(36192);
-var _object_spread_props = __webpack_require__(83590);
-var _object_without_properties = __webpack_require__(86136);
-var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
-var _reactnative = __webpack_require__(46264);
-var FlatList = (props)=>{
-    var showsHorizontalScrollIndicator = props.showsHorizontalScrollIndicator, showsVerticalScrollIndicator = props.showsVerticalScrollIndicator, children = props.children, restProps = _object_without_properties._(props, [
-        "showsHorizontalScrollIndicator",
-        "showsVerticalScrollIndicator",
-        "children"
-    ]);
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, _object_spread_props._(_object_spread._({
-        showsHorizontalScrollIndicator: showsHorizontalScrollIndicator || false,
-        showsVerticalScrollIndicator: showsVerticalScrollIndicator || false
-    }, restProps), {
-        children: children
-    }));
+var _to_consumable_array = __webpack_require__(92716);
+var _reactquery = __webpack_require__(68390);
+var _placeholder = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4556));
+var fetchTodoListQueryOptions = ()=>{
+    return (0, _reactquery.queryOptions)({
+        queryKey: _placeholder.default.queryKeys.getTodoList,
+        queryFn: ()=>_placeholder.default.fetchTodoList()
+    });
 };
-var _default = FlatList;
+var useFetchTodoList = (queryOptions)=>{
+    return (0, _reactquery.useQuery)(_object_spread._({}, fetchTodoListQueryOptions(), queryOptions));
+};
+var fetchTodoQueryOptions = (id)=>{
+    return (0, _reactquery.queryOptions)({
+        queryKey: _to_consumable_array._(_placeholder.default.queryKeys.getTodo).concat([
+            id
+        ]),
+        queryFn: ()=>_placeholder.default.fetchTodo(id)
+    });
+};
+var useFetchTodo = (id, queryOptions)=>{
+    return (0, _reactquery.useQuery)(_object_spread._({}, fetchTodoQueryOptions(id), queryOptions));
+};
+var _default = {
+    useFetchTodoList,
+    useFetchTodo
+};
+
+
+}),
+28145: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _react = __webpack_require__(73551);
+var _apis = __webpack_require__(30821);
+var _GlobalLoading = __webpack_require__(79748);
+var useFetchTodo = (id)=>{
+    var _placeholderQuery_useFetchTodo = _apis.placeholderQuery.useFetchTodo(id), isFetching = _placeholderQuery_useFetchTodo.isFetching, data = _placeholderQuery_useFetchTodo.data;
+    (0, _react.useEffect)(()=>{
+        isFetching ? (0, _GlobalLoading.showLoading)() : (0, _GlobalLoading.hideLoading)();
+    }, [
+        isFetching
+    ]);
+    return {
+        data
+    };
+};
+var _default = useFetchTodo;
+
+
+}),
+37034: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _react = __webpack_require__(73551);
+var _apis = __webpack_require__(30821);
+var _GlobalLoading = __webpack_require__(79748);
+var useFetchTodoList = ()=>{
+    var _placeholderQuery_useFetchTodoList = _apis.placeholderQuery.useFetchTodoList({}), isFetching = _placeholderQuery_useFetchTodoList.isFetching, data = _placeholderQuery_useFetchTodoList.data;
+    (0, _react.useEffect)(()=>{
+        isFetching ? (0, _GlobalLoading.showLoading)() : (0, _GlobalLoading.hideLoading)();
+    }, [
+        isFetching
+    ]);
+    return {
+        data
+    };
+};
+var _default = useFetchTodoList;
+
+
+}),
+4556: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _class_call_check = __webpack_require__(8864);
+var _interop_require_default = __webpack_require__(66705);
+var _axios = /*#__PURE__*/ _interop_require_default._(__webpack_require__(2194));
+var PlaceholderService = function PlaceholderService() {
+    "use strict";
+    _class_call_check._(this, PlaceholderService);
+    this.queryKeys = {
+        getTodoList: [
+            'placeholder',
+            '/todos'
+        ],
+        getTodo: [
+            'placeholder',
+            '/todos'
+        ]
+    };
+    this.fetchTodoList = ()=>_axios.default.get('https://jsonplaceholder.typicode.com/todos').then((res)=>res.data);
+    this.fetchTodo = (id)=>_axios.default.get(`https://jsonplaceholder.typicode.com/todos/${id}`).then((res)=>res.data);
+};
+var _default = new PlaceholderService();
+
+
+}),
+11017: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    getUniqueNumber: function() {
+        return getUniqueNumber;
+    },
+    isEmpty: function() {
+        return isEmpty;
+    },
+    isHasValue: function() {
+        return isHasValue;
+    }
+});
+var _lodash = __webpack_require__(69284);
+var getUniqueNumber = (()=>{
+    var i = 0;
+    return ()=>{
+        i++;
+        return i;
+    };
+})();
+function isEmpty(value) {
+    if (typeof value === 'number') {
+        return false;
+    }
+    if (typeof value === 'boolean') {
+        return false;
+    }
+    if (value instanceof Date) {
+        return false;
+    }
+    return (0, _lodash.isEmpty)(value);
+}
+function isHasValue(value) {
+    return !isEmpty(value);
+}
 
 
 }),
@@ -450,27 +605,237 @@ var _default = ScrollView;
 
 
 }),
-48364: (function (__unused_webpack_module, exports, __webpack_require__) {
+44166: (function (__unused_webpack_module, exports, __webpack_require__) {
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
-Object.defineProperty(exports, "MiniProvider", ({
+Object.defineProperty(exports, "default", ({
     enumerable: true,
     get: function() {
-        return MiniProvider;
+        return _default;
     }
 }));
-var _jsxruntime = __webpack_require__(70095);
-var _reactnativepaper = __webpack_require__(94856);
-var _components = __webpack_require__(38176);
-var MiniProvider = (ref)=>{
-    var children = ref.children;
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnativepaper.Portal, {
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.GlobalLoading, {})
-    });
+var _interop_require_default = __webpack_require__(66705);
+var _ClaimDetail = /*#__PURE__*/ _interop_require_default._(__webpack_require__(47035));
+var _utils = __webpack_require__(11017);
+var claimDetailNavigation = {
+    id: (0, _utils.getUniqueNumber)(),
+    name: 'claimDetail',
+    component: _ClaimDetail.default
 };
+var _default = claimDetailNavigation;
 
 
 }),
+68720: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(66705);
+var _ClaimList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(76726));
+var _utils = __webpack_require__(11017);
+var claimListNavigation = {
+    id: (0, _utils.getUniqueNumber)(),
+    name: 'claimList',
+    component: _ClaimList.default
+};
+var _default = claimListNavigation;
 
-}]);//# sourceMappingURL=__federation_expose_MiniProvider.chunk.bundle.map?platform=android
+
+}),
+55929: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    AppNavigation: function() {
+        return AppNavigation;
+    },
+    default: function() {
+        return _default;
+    }
+});
+var _interop_require_default = __webpack_require__(66705);
+var _object_spread = __webpack_require__(36192);
+var _jsxruntime = __webpack_require__(70095);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _native = __webpack_require__(33177);
+var _nativestack = __webpack_require__(15320);
+var _ClaimDetail = /*#__PURE__*/ _interop_require_default._(__webpack_require__(44166));
+var _ClaimList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(68720));
+var Stack = (0, _nativestack.createNativeStackNavigator)();
+var AppStack = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(Stack.Navigator, {
+        initialRouteName: "claimApp",
+        screenOptions: {
+            headerShown: false
+        },
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(Stack.Screen, {
+            name: "claimApp",
+            component: MiniStackNavigator
+        })
+    });
+};
+var MiniStack = (0, _nativestack.createNativeStackNavigator)();
+var navigations = [
+    _ClaimList.default,
+    _ClaimDetail.default
+];
+var MiniStackNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(MiniStack.Navigator, {
+        initialRouteName: "claimList",
+        screenOptions: {
+            headerShown: false
+        },
+        children: navigations.map((item)=>/*#__PURE__*/ (0, _jsxruntime.jsx)(MiniStack.Screen, _object_spread._({}, item), item.id))
+    });
+};
+var AppNavigation = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_native.NavigationContainer, {
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(AppStack, {})
+    });
+};
+var WrapMiniNavigator = ()=>{
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(MiniStackNavigator, {});
+};
+var _default = WrapMiniNavigator;
+
+
+}),
+47035: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(66705);
+var _jsxruntime = __webpack_require__(70095);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _native = __webpack_require__(33177);
+var _components = __webpack_require__(38176);
+var _useFetchTodo = /*#__PURE__*/ _interop_require_default._(__webpack_require__(28145));
+var ClaimDetailScreen = ()=>{
+    var route = (0, _native.useRoute)();
+    var data = (0, _useFetchTodo.default)(route.params.id).data;
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Header, {
+                dark: true,
+                title: "Claim detail"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Screen, {
+                style: {
+                    paddingLeft: 16,
+                    paddingRight: 16
+                },
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.ScrollView, {
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                        children: data === null || data === void 0 ? void 0 : data.title
+                    })
+                })
+            })
+        ]
+    });
+};
+var _default = ClaimDetailScreen;
+
+
+}),
+76726: (function (__unused_webpack_module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+var _interop_require_default = __webpack_require__(66705);
+var _jsxruntime = __webpack_require__(70095);
+var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
+var _reactnative = __webpack_require__(46264);
+var _native = __webpack_require__(33177);
+var _components = __webpack_require__(38176);
+var _useFetchTodoList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(37034));
+var ClaimListScreen = ()=>{
+    var data = (0, _useFetchTodoList.default)().data;
+    var navigation = (0, _native.useNavigation)();
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Header, {
+                dark: true,
+                title: "Claim list"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Screen, {
+                style: {
+                    paddingLeft: 16,
+                    paddingRight: 16
+                },
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.ScrollView, {
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsxs)(_reactnative.View, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Image, {
+                                source: __webpack_require__(85749),
+                                style: {
+                                    height: 100,
+                                    width: '100%',
+                                    aspectRatio: 1
+                                },
+                                resizeMode: "contain"
+                            }),
+                            data === null || data === void 0 ? void 0 : data.map((item)=>/*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.TouchableOpacity, {
+                                    onPress: ()=>{
+                                        navigation.navigate('claimApp', {
+                                            screen: 'claimDetail',
+                                            params: {
+                                                id: item.id
+                                            }
+                                        });
+                                    },
+                                    style: {
+                                        backgroundColor: '#d3d3d3',
+                                        padding: 16,
+                                        marginBottom: 16
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.Text, {
+                                        children: item.title
+                                    })
+                                }, item.id))
+                        ]
+                    })
+                })
+            })
+        ]
+    });
+};
+var _default = ClaimListScreen;
+
+
+}),
+85749: (function (module, __unused_webpack_exports, __webpack_require__) {
+var AssetSourceResolver = __webpack_require__(14296);
+var resolver = new AssetSourceResolver(undefined, undefined, {"name":"summer-d9215212","type":"jpg","httpServerLocation":"https://raw.githubusercontent.com/nguyenhoangtu0394/host/refs/heads/main/pos/android/remote-assets/assets","scales":[1],"height":4000,"width":6000});
+
+module.exports = resolver.scaledAssetPath();
+
+}),
+
+}]);//# sourceMappingURL=__federation_expose_App.chunk.bundle.map?platform=android
