@@ -820,7 +820,7 @@ var ClaimListScreen = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Header, {
                 dark: true,
-                title: "Claim list v1"
+                title: "Claim list v2"
             }),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Screen, {
                 style: {

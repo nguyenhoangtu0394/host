@@ -2394,7 +2394,7 @@ var helpers = {
 };
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.1" : 0;
+    return  true ? "pos:0.0.2" : 0;
 }
 // Function to match a remote with its name and expose
 // id: pkgName(@federation/app1) + expose(button) = @federation/app1/button
@@ -4925,7 +4925,7 @@ var runtimeCore = __webpack_require__(94875);
 // injected by bundler, so it can not use runtime-core stuff
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "pos:0.0.1" : 0;
+    return  true ? "pos:0.0.2" : 0;
 }
 function getGlobalFederationInstance(name, version) {
     var buildId = getBuilderId();
@@ -37945,7 +37945,7 @@ var ClaimListScreen = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Header, {
                 dark: true,
-                title: "Claim list v1"
+                title: "Claim list v2"
             }),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_components.Screen, {
                 style: {
