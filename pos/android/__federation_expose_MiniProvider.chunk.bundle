@@ -167,9 +167,6 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    FlatList: function() {
-        return _FlatList.default;
-    },
     GlobalLoading: function() {
         return _GlobalLoading.default;
     },
@@ -184,45 +181,10 @@ _export(exports, {
     }
 });
 var _interop_require_default = __webpack_require__(66705);
-var _FlatList = /*#__PURE__*/ _interop_require_default._(__webpack_require__(69425));
 var _GlobalLoading = /*#__PURE__*/ _interop_require_default._(__webpack_require__(79748));
 var _Screen = /*#__PURE__*/ _interop_require_default._(__webpack_require__(95774));
 var _Header = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4440));
 var _ScrollView = /*#__PURE__*/ _interop_require_default._(__webpack_require__(42041));
-
-
-}),
-69425: (function (__unused_webpack_module, exports, __webpack_require__) {
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-Object.defineProperty(exports, "default", ({
-    enumerable: true,
-    get: function() {
-        return _default;
-    }
-}));
-var _interop_require_default = __webpack_require__(66705);
-var _object_spread = __webpack_require__(36192);
-var _object_spread_props = __webpack_require__(83590);
-var _object_without_properties = __webpack_require__(86136);
-var _jsxruntime = __webpack_require__(70095);
-var _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(73551));
-var _reactnative = __webpack_require__(46264);
-var FlatList = (props)=>{
-    var showsHorizontalScrollIndicator = props.showsHorizontalScrollIndicator, showsVerticalScrollIndicator = props.showsVerticalScrollIndicator, children = props.children, restProps = _object_without_properties._(props, [
-        "showsHorizontalScrollIndicator",
-        "showsVerticalScrollIndicator",
-        "children"
-    ]);
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_reactnative.FlatList, _object_spread_props._(_object_spread._({
-        showsHorizontalScrollIndicator: showsHorizontalScrollIndicator || false,
-        showsVerticalScrollIndicator: showsVerticalScrollIndicator || false
-    }, restProps), {
-        children: children
-    }));
-};
-var _default = FlatList;
 
 
 }),
